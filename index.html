@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cook Book</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-all.css">
+	<script defer src="fontawesome-all.js" ></script>
+</head>
+<body>
+	<header>
+		<h3><i class="fas fa-utensils"></i>iQuest Cook Book</h3>
+		<aside>
+			<div id="leftbutton">
+				<button type="button"><i class="fas fa-plus"></i>
+					New recipe
+				</button>
+			</div>
+			<div id="rightbutton">
+				<select>
+					<option>Select a receipe...</option>
+					<option>Scambled egg omlette</option>
+				</select>
+			</div>
+		</aside>
+	</header>
+
+	<main>
+	<article>
+		<p class="mainsection"><i class="fas fa-info"></i>About</p>
+		<form class="mainfirst">
+			Recipe title<br/>
+			<input type="text" name="RecipeTitle" placeholder="  Title"/><br/>
+			Description<br/>
+			<textarea type="text" rows="8" placeholder=" About the recipe"></textarea><br/>
+		</form>
+			<div class="mainSubSection row">
+				<div class="column">
+					<span>Portions</span>
+					<select id="leftSubSection">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+				</div>
+				<div class="column">
+					<span class="centerSubSection">Time(min)</span>
+					<select class="centerSubSection">
+						<option>5</option>
+						<option>10</option>
+						<option>15</option>
+						<option>20</option>
+						<option>30</option>
+						<option>45</option>
+						<option>60</option>
+						<option>90</option>
+						<option>120</option>
+					</select>					
+				</div>
+				<div class="column">
+					<span class="rightSubSection">Dificulty</span>
+					<select class="rightSubSection">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</div>
+	</article>
+	<article>
+		<p class="mainsection"><i class="fas fa-list-ul"></i> Ingredients</p>
+		<ul class="ulAlign">
+			<li>300 g brown rice</li>
+			<li>2 pc red onions</li>
+			<li>1 pc fresh red chilli</li>
+			<li>25 g unsalted butter</li>
+			<li>6 pc large free-range eggs</li>
+		</ul>
+		<div class="row formAlign">
+			<div class="column3 left">
+				<input class="noborder" type="text" name="RecipeTitle" placeholder="Qty."/>
+			</div>
+			<div class="column3 center">
+				<select class="noborder">
+					<option>Unit</option>
+					<option>g</option>
+					<option>Kg</option>
+					<option>pc</option>
+					<option>ml</option>
+					<option>l</option>
+					<option>tea spoon(s)</option>			
+				</select>
+			</div>
+			<div class="column3 hidden center2">of</div>
+			<div class="column3 right">
+				<input type="text" name="RecipeDescription" placeholder="Ingredient" class="noborder">
+				<button type="submit" class="whitebg"><i class="fas fa-plus-square"></i></button>				
+			</div>
+		</div>
+		<form class="formAlign">
+		</form>
+	</article>
+
+	<article>
+		<p class="stepssection"><i class="fas fa-list-ol"></i> Steps</p>
+		<ol>
+			<li>Cook the rice in a pan of boiling salted water according to the packet instructions, the drain and refresh under cold water, leaving it in the colander</li>
+			<li> At the same time, poach the fish in a large paf of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotten spoon. Turn the heat up under the poaching water and bring back to a good simmer.</li>
+			<li>Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel nad finely chop the garling and ginger. Place it all in a large frying pad on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.</li>
+		</ol>
+		<form class="buttomForm">
+			<span>Step</span><br/>
+			<textarea type="text" rows="8" placeholder=" Step description"></textarea><br/><br/>
+			<button type="submit" value="Add step"><i class="fas fa-plus-square"></i> Add step</button><br/><br/>
+		</form>
+		<form class="lastTwoButtons">
+			<button type="submit" value="Cancel" id="lastLeft"><i class="fas fa-trash-alt"></i> Cancel</button>
+			<button type="submit" value="Save recipe" id="lastRight"><i class="far fa-save"></i> Save recipe</button>
+		</form>
+	</article>
+	</main>
+
+	<footer>
+		
+	</footer>
+</body>
+</html>
