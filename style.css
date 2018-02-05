@@ -34,7 +34,6 @@ aside {
 #leftbutton > button {
 	margin-top: 10px;
 	background-color: white;
-	border: none;
 	color: #db4d3f;
 	font-weight: bold;
 }
@@ -61,6 +60,7 @@ aside {
 	font-weight: bold;
 	padding-top: 3px;
 	padding-bottom: 3px;
+	text-indent: 7px;
 }
 
 .mainfirst {
@@ -69,12 +69,10 @@ aside {
 }
 
 .mainfirst > input {
-	border: none;
 	width: 100%;
 }
 
 .mainfirst > textarea {
-	border: none;
 	width: 100%;
 }
 
@@ -83,9 +81,6 @@ aside {
 	margin: 0 auto;
 }
 
-.mainSubSection > select {
-	border: none;
-}
 
 .ulAlign{
 	padding-left: 10%;
@@ -107,14 +102,6 @@ aside {
 		width: 60%;
 		margin: 0 auto;
 	}
-}
-
-.stepssection {
-	background-color: #db4d3f;
-	color: white;
-	font-weight: bold;
-	padding-top: 3px;
-	padding-bottom: 3px;
 }
 
 article > ol {
@@ -221,9 +208,29 @@ ul li:before {
 @media screen and (max-width: 320px) {
 	main {
 		width: 100%;
-		margin: 0 auto;
 	}
 	.hidden {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	main {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	main {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		width: 60%;
+		margin: 0 auto;
 	}
 }
